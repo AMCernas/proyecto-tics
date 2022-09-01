@@ -1,0 +1,485 @@
+/*general*/
+  body {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 80%;
+    background-color: #390e39;
+    background-image: linear-gradient(0deg, #390e39 0%, #270a27 33%, #1f071f 66%, #160416 97%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section{
+    margin-bottom: 100px;
+  }
+  
+  h2 {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    color: #F05F57;
+    font-size: 40px;
+    margin: 50px 0 0px 0;
+    text-transform: uppercase;
+  }
+
+  p, aside{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    color: #FFEBCD;
+    line-height:1.4;
+    text-align: justify;
+  }
+
+  img{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+/*header*/
+ 
+  header{
+    margin-bottom: 70px;
+  }
+
+
+  .img_background{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .img_background::before{
+    content: "";
+    background-image: url('https://miuniversidadculiacan.com/wp-content/uploads/2020/07/tecnologias-informacion.png')
+    ;    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+    border: solid 2px;
+    border-radius: 10px;
+    background-size: cover;
+  }
+
+  h1 {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    font-size: 75px;
+    color: #F05F57 ;    
+    margin: 50px 0 0 0;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-weight: bold;
+  }
+
+  /*navbar*/
+
+    .menu{
+      background: linear-gradient( 135deg, #F05F57 10%, #360940 100%);    
+      font-family: 'Share Tech Mono', monospace;
+      overflow: hidden;
+      z-index: 10000;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      max-width: 80%;
+      border-radius: 10px;
+    }
+
+    a{
+      color:#FFFAF0;
+      float: left;
+      text-align: center;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    a:hover {
+      background-color: #232323;
+      color: #f3f1ef;
+    }
+
+    a:active {
+      background-color: #1c2699;
+      color: white;
+    }
+
+/*info que son las tics?*/
+
+  div.info {
+    margin: 20px auto;
+    padding: 15px;
+    color: #FFEBCD;
+    }
+
+  div.info img.derecha {
+    display: flex;
+    float: right;
+    margin-left: 15px;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+  }
+
+  .derecha{
+    background: linear-gradient(199deg, #f05f57 10%, #9f352f 80%);
+    border-radius: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+
+  div.reset {
+    clear: both;
+  }
+
+
+/*definicion*/
+
+  div.definicion{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  cite {
+    text-align: right; 
+    display: block;
+  }
+
+  /* collague de imagenes definicion*/
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 20%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+/*actividades*/
+
+  .actividades_div {
+    height: 230px;
+    background-size: 100% 100%;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+
+  }
+
+  .listing {
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+  }
+
+  .actividades_p {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25px;
+    color: #F05F57;
+    background: rgb(67,29,96);    
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 20px;
+    line-height: 28px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 21px;
+    font-weight: bold;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+  }
+
+  small {
+    font-family: 'Share Tech Mono', monospace;
+    opacity: 0;
+    font-size: 20px;
+    color: #FFFAF0;
+  }
+
+  .show-description p {
+    height: 150px;
+  }
+  
+  .show-description small {
+    opacity: 1;
+  }
+  
+  .act1{
+    background-image: url("imagenes/actividad1.png");
+  }
+  .act2{
+    background-image: url("imagenes/actividad2.png");
+  }
+  .act3{
+    background-image: url("imagenes/actividad3.png");
+  }
+  .act4{
+    background-image: url("imagenes/actividad4.png");
+  }
+  .act5{
+    background-image: url("imagenes/actividad5.png");
+  }
+  .act6{
+    background-image: url("imagenes/actividad6.png");
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 54px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 20px 0 30px 0;
+    }
+    div {
+      margin: 20px 12px 0 12px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    small {
+      font-size: 18px;
+    }
+  }
+
+  /* boton actividades*/
+
+    form{
+      padding: 160px 150px;
+    }
+  
+    .button-86 {
+      all: unset;
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+      background: transparent;
+      border: none;
+      position: relative;
+      color: #f0f0f0;
+      cursor: pointer;
+      z-index: 1;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-86::after,
+    .button-86::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -99999;
+      transition: all .4s;
+    }
+    
+    .button-86::before {
+      transform: translate(0%, 0%);
+      width: 100%;
+      height: 100%;
+      background: #28282d;
+      border-radius: 10px;
+    }
+    
+    .button-86::after {
+      transform: translate(10px, 10px);
+      width: 35px;
+      height: 35px;
+      background: #ffffff15;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 50px;
+    }
+    
+    .button-86:hover::before {
+      transform: translate(5%, 20%);
+      width: 110%;
+      height: 110%;
+    }
+    
+    .button-86:hover::after {
+      border-radius: 10px;
+      transform: translate(0, 0);
+      width: 100%;
+      height: 100%;
+    }
+    
+    .button-86:active::after {
+      transition: 0s;
+      transform: translate(0, 5%);
+    }
+
+/*importancia conclusion*/
+
+  .div_importancia{
+    float:left;
+    margin-right: 15px;
+  }
+
+  .heading-frame {
+    display: grid;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    grid-template-columns: -webkit-max-content auto;
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto -webkit-max-content;
+    grid-template-rows: auto max-content;
+    background: #333 url(https://www.admaiorem.com/wp-content/uploads/2020/11/Las-TICs-y-el-e-learning.png) center;
+    background-size: cover;
+    color: white;
+    width: 400px;
+    height: 300px;
+    padding: 2rem;
+  }
+  .heading-frame:before, .heading-frame:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+  }
+  .heading-frame:before {
+    grid-row: 1/2;
+    border-right: none;
+    border-bottom: none;
+  }
+  .heading-frame:after {
+    grid-row: 1/span 2;
+    border-left: none;
+  }
+  .heading-frame h2 {
+    margin: 1rem 1rem -0.5rem 0;
+    font-family: "Pragati Narrow", sans-serif;
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+/*footer*/
+
+  h3{
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    color: #FFEBCD;
+    font-size: 50px;
+    margin: 50px 0 0px 0;
+  }
+
+  footer{
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient( 180deg, #F05F57 10%, #360940 100%);  
+    height: auto;
+    width: 100%;
+    color: #fff;
+    margin:0;
+  }
+
+  .footer{
+    margin-bottom: 0px;
+
+  }
+
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+    text-align: center;
+  }
+
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .socials li{
+    margin: 0 10px;
+  }
+
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+  }
+
+  .socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+
+  }
+  .socials a:hover i{
+    color: aqua;
+  }
